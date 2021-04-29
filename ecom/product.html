@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Product</title>
+</head>
+<body>
+ <!--nav bar with search navbar 1-->
+ <nav class="navbar navbar-expand navbar-dark bg-primary">
+    <div class="d-flex flex-grow-1">    
+        <a href="index.html" class="navbar-brand font-weight-bold">Brand name</a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="cart.html" > <i class="fas fa-shopping-cart" width = 2% title="cart"></i></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" title="user"><i class="fas fa-user-circle" width = 2%></i>
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="register.html">New user?</a>
+                  <a class="dropdown-item" href="#">My profile</a>
+                  <a class="dropdown-item" href="#">Order History</a>
+                  <a class="dropdown-item" href="login.html">Login</a>
+                </div>
+              </li>
+        </ul>
+        <form class="mr-2 my-auto d-inline-block order-1 navbar-nav ml-auto">
+            <div class="input-group">
+                <input type="text" class="form-control border border-right-0" placeholder="Search...">
+                <span class="input-group-append">
+                    <button class="btn btn-success border border-left-0" type="button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </span>
+            </div>
+        </form>
+    </div>    
+</nav><!--nav1 ends-->
+<!--category navbar 2-->
+
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+    <!-- Links -->
+    <ul class="navbar-nav">
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle bg-light" href="#" id="navbardrop" data-toggle="dropdown">
+          FASHON
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="product.html">T-SHIRT</a>
+          <a class="dropdown-item" href="product1.html">JEANS</a>
+          <a class="dropdown-item" href="product.html">SAREE</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="product1">BODY CARE</a>
+      </li>
+  
+      <!-- Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle bg-light" href="#" id="navbardrop" data-toggle="dropdown">
+          ELECTRONICS
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="product1.html">PHONE</a>
+          <a class="dropdown-item" href="product.html">LAPTOP</a>
+          <a class="dropdown-item" href="product.html">COMPUTERS</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">SHOES</a>
+      </li>
+      
+    </ul>
+  </nav><!--navbar2-->
+   
+<div class="filter"> <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#mobile-filter" aria-expanded="true" aria-controls="mobile-filter">
+    Filters<span class="fa fa-filter pl-1"></span></button>
+</div>
+<div id="mobile-filter">
+    
+    <div class="border-bottom pb-2 ml-2">
+        <h4 id="burgundy">Filters</h4>
+    </div>
+    <div class="py-2 border-bottom ml-3">
+        <h6 class="font-weight-bold">BRAND</h6>
+        <div id="orange"><span class="fa fa-minus"></span></div>
+        <form>
+            <div class="form-group"> <input type="checkbox"> <label for="artisan">BRAND1</label> </div>
+            <div class="form-group"> <input type="checkbox" id="breakfast"> <label for="breakfast">BRAND2</label> </div>
+        </form>
+    </div>
+    <div class="py-2 border-bottom ml-3">
+        <h6 class="font-weight-bold">RATINGS</h6>
+        <div id="orange"><span class="fa fa-minus"></span></div>
+        <form>
+            <div class="form-group"> <input type="checkbox" > <label>4 AND ABOVE</label> </div>
+            <div class="form-group"> <input type="checkbox" > <label >3 AND ABOVE</label> </div>
+            <div class="form-group"> <input type="checkbox" > <label >2 AND ABOVE </label> </div>
+            
+        </form>
+    </div>
+    <div class="py-2 ml-3">
+        <h6 class="font-weight-bold">Top Offers</h6>
+        <div id="orange"><span class="fa fa-minus"></span></div>
+        <form>
+            <div class="form-group"> <input type="checkbox" id="25off"> <label for="25">25% off</label> </div>
+            <div class="form-group"> <input type="checkbox" id="5off"> <label for="5off" id="off">5% off </label> </div>
+        </form>
+    </div>
+</div>
+<!-- Sidebar filter section -->
+<section id="sidebar">
+    
+    <div class="border-bottom pb-2 ml-2">
+        <h4 id="burgundy">Filters</h4>
+    </div>
+    <div class="py-2 border-bottom ml-3">
+        <h6 class="font-weight-bold">BRAND</h6>
+        <div id="orange"><span class="fa fa-minus"></span></div>
+        <form>
+            <div class="form-group"> <input type="checkbox" id="artisan"> <label>BRAND1</label> </div>
+            <div class="form-group"> <input type="checkbox" id="breakfast"> <label>BRAND2</label> </div>
+        </form>
+    </div>
+    <div class="py-2 border-bottom ml-3">
+        <h6 class="font-weight-bold">RATINGS</h6>
+        <div id="orange"><span class="fa fa-minus"></span></div>
+        <form>
+            <div class="form-group"> <input type="checkbox" > <label >4 AND ABOVE</label> </div>
+            <div class="form-group"> <input type="checkbox" > <label >3 AND ABOVE</label> </div>
+            <div class="form-group"> <input type="checkbox" > <label >2 AND ABOVE</label> </div>
+        </form>
+    </div>
+    <div class="py-2 ml-3">
+        <h6 class="font-weight-bold">Top Offers</h6>
+        <div id="orange"><span class="fa fa-minus"></span></div>
+        <form>
+            <div class="form-group"> <input type="checkbox" id="25off"> <label for="25">25% off</label> </div>
+            <div class="form-group"> <input type="checkbox" id="5off"> <label for="5off" id="off">5% off</label> </div>
+        </form>
+    </div>
+</section>
+<!-- products section -->
+<section id="products" >
+    <div class="container">
+        <div class="d-flex flex-row">
+            <div class="ml-auto mr-lg-4">
+                <div id="sorting" class="border rounded p-1 m-1"> <span class="text-muted">Sort by</span> <select name="sort" id="sort">
+                        <option value="popularity"><b>Popularity</b></option>
+                        <option value="prcie"><b>Price</b></option>
+                        <option value="rating"><b>Rating</b></option>
+                    </select> </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1 p-5">
+                <div class="card"> <img class="card-img-top" src="images/1.jpg" width="100%" height="300">
+                    <div class="card-body">
+                        <h5><b>Watch1</b> </h5>
+                        <div class="d-flex flex-row my-2">
+                            <div class="text-muted">₹1000</div> 
+                               
+                        </div> <a href="details.html"> <button class="btn btn-primary w-100 rounded my-2">VIEW</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1 p-5">
+                <div class="card"> <img class="card-img-top" src="images/3.jpg" width="200" height="300">
+                    <div class="card-body text-center">
+                        <h5><b>Watch</b> </h5>
+                        <div class="d-flex flex-row my-2">
+                            <div class="text-muted text-center">₹1500</div>
+                        </div><a href="details.html"> <button class="btn btn-primary w-100 rounded my-2">VIEW</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1 p-5">
+                <div class="card"> <img class="card-img-top" src="images/4.jpg" width="200" height="300">
+                    <div class="card-body">
+                        <h5><b>T-SHIRT</b> </h5>
+                        <div class="d-flex flex-row my-2">
+                            <div class="text-muted">₹500</div>
+                         </div> <a href="details.html"> <button class="btn btn-primary w-100 rounded my-2">VIEW</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1 p-5">
+                <div class="card"> <img class="card-img-top" src="images/5.jpg" width="200" height="300">
+                    <div class="card-body">
+                        <h5><b>T-shirt</b> </h5>
+                        <div class="d-flex flex-row my-2">
+                            <div class="text-muted">₹160</div>
+                        </div><a href="details.html"> <button class="btn btn-primary w-100 rounded my-2">VIEW</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1 p-5">
+                <div class="card"> <img class="card-img-top" src="images/6.jpg" width="200" height="300">
+                    <div class="card-body">
+                        <h5><b>T-SHIRT</b> </h5>
+                        <div class="d-flex flex-row my-2">
+                            <div class="text-muted">₹850</div>
+                            
+                        </div> <a href="details.html"> <button class="btn btn-primary w-100 rounded my-2">VIEW</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1 p-5">
+                <div class="card d-relative"> <img class="card-img-top" src="images/7.jpg" width="200" height="300">
+                    <div class="card-body">
+                        <h5><b>SHOES</b> </h5>
+                        
+                        <div class="d-flex flex-row my-2">
+                            <div class="text-muted price">₹4500</div>
+                            
+                        </div> <a href="details.html"> <button class="btn btn-primary w-100 rounded my-2">VIEW</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1 p-5">
+                <div class="card d-relative"> <img class="card-img-top" src="images/7.jpg" width="200" height="300">
+                    <div class="card-body">
+                        <h5><b>SHOES</b> </h5>
+                        
+                        <div class="d-flex flex-row my-2">
+                            <div class="text-muted price">₹4500</div>
+                            
+                        </div> <a href="details.html"> <button class="btn btn-primary w-100 rounded my-2">VIEW</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1 p-5">
+                <div class="card d-relative"> <img class="card-img-top" src="images/8.jpg" width="200" height="300">
+                    <div class="card-body">
+                        <h5><b>SHOES</b> </h5>
+                        
+                        <div class="d-flex flex-row my-2">
+                            <div class="text-muted price">₹4500</div>
+                            
+                        </div> <a href="details.html"> <button class="btn btn-primary w-100 rounded my-2">VIEW</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1 p-5">
+                <div class="card d-relative"> <img class="card-img-top" src="images/8.jpg" width="200" height="300">
+                    <div class="card-body">
+                        <h5><b>SHOES</b> </h5>
+                        
+                        <div class="d-flex flex-row my-2">
+                            <div class="text-muted price">₹4500</div>
+                            
+                        </div> <a href="details.html"> <button class="btn btn-primary w-100 rounded my-2">VIEW</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>  
+
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/index.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css">
+    <title>Cart</title>
+</head>
+<body>
+    <!--nav bar with search navbar 1-->
+  <nav class="navbar navbar-expand navbar-dark bg-primary">
+    <div class="d-flex flex-grow-1">    
+        <a href="index.html" class="navbar-brand font-weight-bold">Brand name</a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="cart.html" > <i class="fas fa-shopping-cart" width = 2% title="cart"></i></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" title="user"><i class="fas fa-user-circle" width = 2%></i>
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="register.html">New user?</a>
+                  <a class="dropdown-item" href="#">My profile</a>
+                  <a class="dropdown-item" href="#">Order History</a>
+                  <a class="dropdown-item" href="login.html">Login</a>
+                </div>
+              </li>
+        </ul>
+        <form class="mr-2 my-auto d-inline-block order-1 navbar-nav ml-auto">
+            <div class="input-group">
+                <input type="text" class="form-control border border-right-0" placeholder="Search...">
+                <span class="input-group-append">
+                    <button class="btn btn-success border border-left-0" type="button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </span>
+            </div>
+        </form>
+    </div>    
+</nav><!--nav1 ends-->
+<!--category navbar 2-->
+
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+    <!-- Links -->
+    <ul class="navbar-nav">
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle bg-light" href="#" id="navbardrop" data-toggle="dropdown">
+          FASHON
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="product1.html">T-SHIRT</a>
+          <a class="dropdown-item" href="product1.html">JEANS</a>
+          <a class="dropdown-item" href="product1.html">SAREE</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="product.html">BODY CARE</a>
+      </li>
+  
+      <!-- Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle bg-light" href="#" id="navbardrop" data-toggle="dropdown">
+          ELECTRONICS
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="product1.html">PHONE</a>
+          <a class="dropdown-item" href="product.html">LAPTOP</a>
+          <a class="dropdown-item" href="product1.html">COMPUTERS</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="product1.html">SHOES</a>
+      </li>
+      
+    </ul>
+  </nav><!--navbar2-->
+<!--cart-->
+    <div class="container bg-white rounded-top mt-5" id="zero-pad">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-10 col-12 pt-3">
+                
+                <div class="d-flex flex-column pt-4">
+                    <div>
+                        <h5 class="text-uppercase font-weight-normal">CART</h5>
+                    </div>
+                    <div class="font-weight-normal">2 items</div>
+                </div>
+                <div class="d-flex flex-row px-lg-5 mx-lg-5 mobile" id="heading">
+                    <div class="px-lg-5 mr-lg-5" id="produc">PRODUCTS</div>
+                    <div class="px-lg-5 ml-lg-5" id="prc">PRICE</div>
+                    <div class="px-lg-5 ml-lg-1" id="quantity">QUANTITY</div>
+                    <div class="px-lg-5 ml-lg-3" id="total">TOTAL</div>
+                </div>
+                <!--first product-->
+                <div class="d-flex flex-row justify-content-between align-items-center pt-lg-4 pt-2 pb-3 border-bottom mobile">
+                    <div class="d-flex flex-row align-items-center">
+                        <div><img src="images/shoe5.jpg" width="150" height="150" alt="" id="image"></div>
+                        <div class="d-flex flex-column pl-md-3 pl-1">
+                            <div>
+                                <h6>Shoe</h6>
+                            </div>
+                            <div>product.No:<span class="pl-2">00</span></div>
+                            <div>Color:<span class="pl-3">shoe</span></div>
+                            <div>Size:<span class="pl-4"> 10</span></div>
+                        </div>
+                    </div>
+                    <div class="pl-md-0 pl-1"><b> 1000</b></div>
+                    <div class="pl-md-0 pl-1"><b>2</b></div>
+                    <div class="pl-md-0 pl-1"><b>2000</b></div>
+                    <div class="close">&times;</div>
+                </div><!--first product div ends-->
+                <!--2nd product-->
+                <div class="d-flex flex-row justify-content-between align-items-center pt-4 pb-3 mobile">
+                    <div class="d-flex flex-row align-items-center">
+                        <div><img src="images/shoe4.jpg" width="150" height="150" alt="" id="image"></div>
+                        <div class="d-flex flex-column pl-md-3 pl-1">
+                            <div>
+                                <h6>Shoe</h6>
+                            </div>
+                            <div>Prod.No:<span class="pl-2">001</span></div>
+                            <div>Color:<span class="pl-3">black</span></div>
+                            <div>Size:<span class="pl-4"> 10</span></div>
+                        </div>
+                    </div>
+                    <div class="pl-md-0 pl-1"><b>2000</b></div>
+                    <div class="pl-md-0 pl-1"><b>2</b></div>
+                    <div class="pl-md-0 pl-1"><b>4000</b></div>
+                    <div class="close">&times;</div>
+                </div><!--ends-->
+            </div>
+        </div>
+    </div>
+    <div class="container bg-light rounded-bottom py-4" id="zero-pad">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-10 col-12">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="px-md-0 px-1" id="footer-font"> <b class="pl-md-4">SUBTOTAL: <span class="pl-md-4">5000</span></b> </div>
+                    <div><a href="checkout_form.html"> <button class="btn btn-sm bg-primary text-white px-lg-5 px-3">CONTINUE</button></a> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

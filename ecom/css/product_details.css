@@ -1,0 +1,7 @@
+.front-stars {
+ 
+  color: #FFBC0B;
+}
+.navbar-nav li:hover .dropdown-menu {
+  display: block;
+}

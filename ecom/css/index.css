@@ -1,0 +1,23 @@
+.navbar-nav li:hover .dropdown-menu {
+  display: block;
+}
+h2{
+  padding:0.5%;
+}
+.card{
+  padding: 2%;
+  border: none;
+  max-height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: auto;
+  text-align: center;
+}
+.card:hover {
+
+  -ms-transform: scale(1.02); /* IE 9 */
+  -webkit-transform: scale(1.02); /* Safari 3-8 */
+  transform: scale(1.02); 
+  }
+  .best_seller{
+    overflow: hidden;
+  }

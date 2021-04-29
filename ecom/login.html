@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css">
+    <title>LOGIN</title>
+</head>
+<body>
+
+
+    <!--nav bar with search navbar 1-->
+    <nav class="navbar navbar-expand navbar-dark bg-primary">
+        <div class="d-flex flex-grow-1">    
+            <a href="index.html" class="navbar-brand font-weight-bold">Brand name</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html" > <i class="fas fa-shopping-cart" width = 2% title="cart"></i></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" title="user"><i class="fas fa-user-circle" width = 2%></i>
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="register.html">New user?</a>
+                      <a class="dropdown-item" href="#">My profile</a>
+                      <a class="dropdown-item" href="#">Order History</a>
+                      <a class="dropdown-item" href="login.html">Login</a>
+                    </div>
+                  </li>
+            </ul>
+            <form class="mr-2 my-auto d-inline-block order-1 navbar-nav ml-auto">
+                <div class="input-group">
+                    <input type="text" class="form-control border border-right-0" placeholder="Search...">
+                    <span class="input-group-append">
+                        <button class="btn btn-success border border-left-0" type="button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </span>
+                </div>
+            </form>
+        </div>    
+    </nav><!--nav1 ends-->
+    <!--category navbar 2-->
+    
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <!-- Links -->
+        <ul class="navbar-nav">
+    
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle bg-light" href="#" id="navbardrop" data-toggle="dropdown">
+              FASHON
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="product1.html">T-SHIRT</a>
+              <a class="dropdown-item" href="product1.html">JEANS</a>
+              <a class="dropdown-item" href="product1.html">SAREE</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">BODY CARE</a>
+          </li>
+      
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle bg-light" href="#" id="navbardrop" data-toggle="dropdown">
+              ELECTRONICS
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="product1.html">PHONE</a>
+              <a class="dropdown-item" href="product1.html">LAPTOP</a>
+              <a class="dropdown-item" href="product1.html">COMPUTERS</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="product1.html">SHOES</a>
+          </li>
+          
+        </ul>
+      </nav><!--navbar2-->
+  
+    <script src="https://use.fontawesome.com/f59bcd8580.js"></script>
+    <div class="container">
+    <div class="row m-5 no-gutters shadow-lg bg-primary">
+    <div class="col-md-6 d-none d-md-block text-white ">
+    <div class="container">
+    <h1 class="text-center">Brand name</h1>
+    <h5>LOGIN</h5>
+    <p>
+    Get access to your Orders, Wishlist and Recommendations</p>
+    </div>
+    </div>
+    <div class="col-md-6 bg-white p-5">
+    <h3 class="pb-3">Login Form</h3>
+    <div class="form-style">
+    <form>
+      <div class="form-group pb-3">    
+        <input type="email" placeholder="Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">   
+      </div>
+      <div class="form-group pb-3">   
+        <input type="password" placeholder="Password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <div class="d-flex align-items-center justify-content-between">
+    <div class="d-flex align-items-center"><input name="" type="checkbox" value="" /> <span class="pl-2 font-weight-bold">Remember Me</span></div>
+    <div><a href="#">Forget Password?</a></div>
+    </div>
+       <div class="pb-2">
+      <button type="submit" class="btn btn-success w-100 font-weight-bold mt-2">Submit</button>
+       </div>
+    </form>
+      <div class="sideline">OR</div>
+      <div>
+      <button type="submit" class="btn btn-primary w-100 font-weight-bold mt-2"><i class="fa fa-facebook" aria-hidden="true"></i> Login With Facebook</button>
+      </div>
+      <div class="pt-4 text-center">
+      Get Members Benefit. <a href="register.html">Sign Up</a>
+      </div>
+    </div>
+    
+    </div>
+    </div>
+    </div>
+</body>
+</html>

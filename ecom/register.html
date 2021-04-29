@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Register</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!--nav bar with search navbar 1-->
+  <nav class="navbar navbar-expand navbar-dark bg-primary">
+    <div class="d-flex flex-grow-1">    
+        <a href="index.html" class="navbar-brand font-weight-bold">Brand name</a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="cart.html" > <i class="fas fa-shopping-cart" width = 2% title="cart"></i></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" title="user"><i class="fas fa-user-circle" width = 2%></i>
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">New user?</a>
+                  <a class="dropdown-item" href="#">My profile</a>
+                  <a class="dropdown-item" href="#">Order History</a>
+                  <a class="dropdown-item" href="#">Login</a>
+                </div>
+              </li>
+        </ul>
+        <form class="mr-2 my-auto d-inline-block order-1 navbar-nav ml-auto">
+            <div class="input-group">
+                <input type="text" class="form-control border border-right-0" placeholder="Search...">
+                <span class="input-group-append">
+                    <button class="btn btn-success border border-left-0" type="button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </span>
+            </div>
+        </form>
+    </div>    
+</nav><!--nav1 ends-->
+<!--category navbar 2-->
+
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+    <!-- Links -->
+    <ul class="navbar-nav">
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle bg-light" href="#" id="navbardrop" data-toggle="dropdown">
+          FASHON
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">T-SHIRT</a>
+          <a class="dropdown-item" href="#">JEANS</a>
+          <a class="dropdown-item" href="#">SAREE</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">BODY CARE</a>
+      </li>
+  
+      <!-- Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle bg-light" href="#" id="navbardrop" data-toggle="dropdown">
+          ELECTRONICS
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">PHONE</a>
+          <a class="dropdown-item" href="#">LAPTOP</a>
+          <a class="dropdown-item" href="#">COMPUTERS</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">SHOES</a>
+      </li>
+      
+    </ul>
+  </nav><!--navbar2-->
+
+    <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="card shadow my-5">
+              <h4 class="card-header">Register</h4>
+              <div class="card-body">
+                <form>
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" class="form-control border">
+                    <small class="form-text text-danger feedback"></small>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email" class="form-control border">
+                    <small class="form-text text-danger feedback"></small>
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" class="form-control border" autocomplete="off">
+                    <small class="form-text text-danger feedback"></small>
+                  </div>
+                  <div class="form-group">
+                    <label for="confirmPassword">Confirm password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" class="form-control border" autocomplete="off">
+                    <small class="form-text text-danger feedback"></small>
+                  </div>
+                  <div class="custom-control custom-switch mb-3">
+                    <input type="checkbox" class="custom-control-input" id="showPassword" name="showPassword">
+                    <label class="custom-control-label" for="showPassword">Show password</label>
+                  </div>
+                  <button type="submit" class="btn btn-primary" name="btn" disabled>Register</button>
+                </form>
+              </div>
+              <div class="card-footer"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+<script>
+  const [form] = document.forms;
+const [
+  nameFeedback,
+  emailFeedback,
+  passwordFeedback,
+  confirmPasswordFeedback
+] = document.querySelectorAll('.feedback');
+
+const isNameValid = name => {
+  return name.length > 3 && name.length <= 20 && /^[A-Za-z0-9_ ]*$/g.test(name);
+}
+
+const isEmailValid = email => {
+  return /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g.test(email);
+}
+
+const isPasswordValid = password => {
+  return /^((?=.*[\d])(?=.*[a-z])(?=.*[A-Z])|(?=.*[a-z])(?=.*[A-Z])(?=.*[^\w\d\s])|(?=.*[\d])(?=.*[A-Z])(?=.*[^\w\d\s])|(?=.*[\d])(?=.*[a-z])(?=.*[^\w\d\s])).{7,30}$/gm.test(password);
+}
+
+const isPasswordMatch = (password, confirmPassword) => {
+  return !!confirmPassword && password === confirmPassword;
+}
+
+const validation = (name, email, password, confirmPassword) => {
+  return (
+    isNameValid(name) &&
+    isEmailValid(email) &&
+    isPasswordValid(password) &&
+    isPasswordMatch(password, confirmPassword)
+  );
+}
+
+const toggleShowPassword = (toggler, elements) => {
+  toggler.addEventListener('change', e => {
+    elements.forEach(element => {
+      element.setAttribute('type', e.target.checked ? 'text' : 'password');
+    });
+  });
+};
+
+const getElement = (name, e) => {
+  return {
+    name(e) {
+      e.target.classList.toggle('border-danger', !isNameValid(e.target.value));
+      nameFeedback.textContent = isNameValid(e.target.value) ? null : 'Name must be at least 3 to 20 characters long and contain only alphabet, number, underscore and white space';
+    },
+    email(e) {
+      e.target.classList.toggle('border-danger', !isEmailValid(e.target.value));
+      emailFeedback.textContent = isEmailValid(e.target.value) ? null : 'Provide a valid email address';
+    },
+    password(e) {
+      e.target.classList.toggle('border-danger', !isPasswordValid(e.target.value));
+      passwordFeedback.textContent = isPasswordValid(e.target.value) ? null : 'Password must be at least 7 characters long and contain 1 capital letter and 1 symbol or number';
+
+      form.confirmPassword.classList.toggle('border-danger', !isPasswordMatch(e.target.value, form.confirmPassword.value));
+      confirmPasswordFeedback.textContent = isPasswordMatch(e.target.value, form.confirmPassword.value) ? null : 'Password do not match';
+    },
+    confirmPassword(e) {
+      e.target.classList.toggle('border-danger', !isPasswordMatch(form.password.value, e.target.value));
+      confirmPasswordFeedback.textContent = isPasswordMatch(form.password.value, e.target.value) ? null : 'Password do not match';
+    }
+  }[name](e);
+}
+
+const handleInput = e => {
+  const { name: formName, email, password, confirmPassword, btn } = form;
+  const { name } = e.target;
+  
+  getElement(name, e);
+  
+  btn.disabled = !validation(formName.value, email.value, password.value, confirmPassword.value);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  toggleShowPassword(form.showPassword, [form.password, form.confirmPassword]);
+  
+  form.name.addEventListener('input', handleInput);
+
+  form.email.addEventListener('input', handleInput);
+
+  form.password.addEventListener('input', handleInput);
+
+  form.confirmPassword.addEventListener('input', handleInput);
+  
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const { name, email, password, confirmPassword } = e.target;
+    const submittedValue = {
+      name: name.value,
+      email: email.value,
+      password: password.value,
+      confirmPassword: confirmPassword.value
+    };
+    
+    // Check console to see the result
+    console.log(submittedValue);
+  });
+});
+</script>
+</body>
+</html>
